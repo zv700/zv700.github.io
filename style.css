@@ -1,6 +1,11 @@
-body {font-family: Georgia; background-color: rgb(29, 48, 65); color: rgb(255, 244, 220);}
+body {font-family: Georgia; background-color: rgb(17, 28, 37); color: rgb(255, 253, 247);}
 
+a:link {
+    color: rgb(255, 252, 250);
+  }
+a:visited {
+    color:aliceblue;
+}
 
-
-.ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:5px solid #000000}.ul li:last-child{border-bottom:none}
+.ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:5px}.ul li:last-child{border-bottom:none}
 
