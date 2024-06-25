@@ -7,27 +7,100 @@
     <title>zv programming portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
     <div class="container">
 	<script src="index.js"></script>
-
-    <h1>Zach V's programming portfolio website</h1>
-        <p>Welcome to my humble programming portfolio website. Please enjoy your stay!</p>
-        <a href="./about"><p>About me</p></a>
-        <a href="./coursework"><p>Completed coursework</p></a>
-        <a href="https://github.com/zv700/general_programming_notes"><p>Programming notes Github repo</p></a>
-        <a href="https://zachvaaa.wixsite.com/portfolio"><p>General professional portfolio website</p></a>
-        <div></div>
-    <h2>Python projects</h2>
-        <a href="./python_projects/puzzleclone"><p>Block puzzle game clone</p></a>
-        <a href="./python_projects/adlibs"><p>Adlibs</p></a>
-        <a href="./python_projects/clockapp"><p>Clock app</p></a>
-    <h2>JavaScript projects</h2>
-        <a href="./javascript_projects/rps"><p>Rock Paper Scissors</p></a>
-
-        <!--For links, you can omit the file ending [ex. .html] to remove the .html from the directory in the searchbar in browser, githubpages does automatically-->
-            <!--href="./python_projects/puzzleclone.html" can instead be href="./python_projects/puzzleclone"-->
-        <!--Only for index.html, you can leave the directory as "/" since it's the default page-->
     </div>
+    
+    <!-- Top menu -->
+    <div class="zv-top">
+        <div class="zv-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="zv-button zv-padding-16 zv-left" onclick="zv_open()">☰</div>
+        <div class="zv-right zv-padding-16"><a href="./about"><p>About me</p></a></div>
+        <div class="zv-center zv-padding-16">Zach V's programming portfolio</div>
+    </div>
+    
+
+        <h1>Zach V's programming portfolio website</h1>
+            <p>Welcome to my humble programming portfolio website. Please enjoy your stay!</p>
+            <!-- <a href="./about"><p>About me</p></a> -->
+            <ul class="zv-ul zv-hoverable">
+                <li><a href="./coursework"><p>Completed coursework</p></a></li>
+                <li><a href="https://github.com/zv700/general_programming_notes"><p>Programming notes Github repo</p></a></li>
+                <li><a href="https://zachvaaa.wixsite.com/portfolio"><p>General professional portfolio website</p></a></li>
+            </ul>
+
+    <div></div>
+
+        <h2>Python projects</h2>
+            <ul class="zv-ul zv-hoverable">
+                <li><a href="./python_projects/puzzleclone"><p>Block puzzle game clone</p></a></li>
+                <li><a href="./python_projects/adlibs"><p>Adlibs</p></a></li>
+                <li><a href="./python_projects/clockapp"><p>Clock app</p></a></li>
+            </ul>
+        
+    <div></div>
+
+        <h2>JavaScript projects</h2>
+            <ul class="zv-ul zv-hoverable">
+                <li><a href="./javascript_projects/rps"><p>Rock Paper Scissors</p></a></li>
+            </ul>
+            <!--For links, you can omit the file ending [ex. .html] to remove the .html from the directory in the searchbar in browser, githubpages does automatically-->
+                <!--href="./python_projects/puzzleclone.html" can instead be href="./python_projects/puzzleclone"-->
+            <!--Only for index.html, you can leave the directory as "/" since it's the default page-->
+        
+    <div></div>
+
+    <!-- Footer -->
+  <footer class="zv-row-padding w3-padding-32">
+    <div class="zv-third">
+      <h3>Thank you for visiting!</h3>
+      <p>Your time is valuable. I really appreciate that you used it reading through my website! -z</p>
+
+      <p>CSS based on W3schools CSS. Thank you!</p>
+    </div>
+  
+    <div class="zv-third">
+      <h3>Other links</h3>
+        <ul class="zv-ul zv-hoverable">
+            <li class="zv-padding-16">
+                <a href="https://zachvaaa.wixsite.com/portfolio">
+                    <img src="/images/placeholder.jpg" class="zv-left zv-margin-right" style="width:50px">
+                    <span class="zv-large"></span>>General portfolio</span><br>
+                    <span>Link to Zach's general professional portfolio which includes more non-programming work samples</span>
+                </a>
+            </li>
+            <li class="zv-padding-16">
+                <img src="/images/placeholder1.jpg" class="zv-left zv-margin-right" style="width:50px">
+                <span class="zv-large">Github programming notes repo</span><br>
+                <span>Link to Zach's general programming notes reference repopository</span>
+            </li> 
+            <li class="zv-padding-16">
+                <img src="/images/placeholder2.jpg" class="zv-left zv-margin-right" style="width:50px">
+                <span class="zv-large">LinkedIn</span><br>
+                <span>WiP</span>
+            </li> 
+        </ul>
+    </div>
+
+    <div class="zv-third zv-serif">
+        <p>Placeholder text</p>
+
+    </div>
+      
+  </footer>
+
+  <script>
+    // Script to open and close sidebar
+    function zv_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+     
+    function zv_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
   </body>
 </html>

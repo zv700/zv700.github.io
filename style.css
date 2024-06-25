@@ -1,0 +1,26 @@
+
+body {background-color: black; color: white;}
+
+
+
+.zv-top,.zv-bottom{position:fixed;width:100%;z-index:1}.zv-top{top:0}.zv-bottom{bottom:0}
+
+.zv-white,.zv-hover-white:hover{color:#000!important;background-color:#fff!important}
+.zv-black,.zv-hover-black:hover{color:#fff!important;background-color:#000!important}
+
+.zv-xlarge{font-size:24px!important}.zv-xxlarge{font-size:36px!important}.zv-xxxlarge{font-size:48px!important}.zv-jumbo{font-size:64px!important}
+
+.zv-button:hover{color:#000!important;background-color:#ccc!important}
+.zv-left{float:left!important}.zv-right{float:right!important}
+
+
+.zv-padding-16{padding-top:16px!important;padding-bottom:16px!important}.zv-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.zv-row-padding,.zv-row-padding>.zv-half,.zv-row-padding>.zv-third,.zv-row-padding>.zv-twothird,.zv-row-padding>.zv-threequarter,.zv-row-padding>.zv-quarter,.zv-row-padding>.zv-col{padding:0 8px}
+
+
+.zv-center{text-align:center!important}
+
+.zv-hoverable tbody tr:hover,.zv-ul.zv-hoverable li:hover{background-color:#ccc}.zv-centered tr th,.zv-centered tr td{text-align:center}
+
+.zv-tiny{font-size:10px!important}.zv-small{font-size:12px!important}.zv-medium{font-size:15px!important}.zv-large{font-size:18px!important}
+.zv-serif{font-family:serif}
