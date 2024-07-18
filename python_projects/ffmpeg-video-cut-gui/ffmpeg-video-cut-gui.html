@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zv programming portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+	<script src="index.js"></script>
+
+    <h1>Self project: FFMPEG video cut GUI project</h1>
+    <h2>Problem: using video editing software to cut video clips can be time consuming</h2>
+    <ul>
+        <li>Cutting video (i.e. saving a small portion of a large video file as its own video clip)
+            using video editing software can take anywhere from 5 minutes to an hour depending on the length of the video clip you are trying
+            to make and how long the original video is.
+        </li>
+        <li>Video editing software by default reencodes video before you can save the clip as a video file 
+            outside of your project file.
+        </li>
+        <li>Reencoding video is unecessarily time consuming if you aren't making any meaningful edits to the clip being produced.</li>
+    </ul>
+
+    <h2>Solution: Use FFMPEG to cut video without reencoding.</h2>
+    <ul>
+        <li>FFMPEG can cut video without reencoding which usually takes *seconds.*</li>
+    </ul>
+
+    <h3>Subproblem: FFMPEG must be run from commandline</h3>
+    Using FFMPEG on Windows PC
+    <ol>
+        <li>open commandline</li>
+        <li>change directory to ffmpeg.exe's location [cd users/username/videos/ffmpeg.exe]</li>
+        <li>open up my FFMPEG command notes .txt file</li>
+        <li>copy + paste the name of the video file I want to cut into the prewritten FFMPEG command template code, twice. Once for the input location and once for the output location.</li>
+        <li>change the ouput location's file name so it doesn't overwrite the original file. [video.mp4 >>> video-cut.mp4]</li>
+        <li>play the video file to find times for the beginning and end of the portion I want to cut out.</li>
+        <li>type in beginning and end times in the template code</li>
+        <li>copy + paste ffmpeg command template code into commandline. Press Enter to run. Video outputs to same directory as FFMPEG.exe</li>
+
+    </ol>
+    <h3>Subproblem's solution: make a GUI for cutting video via FFMPEG</h3>
+    <ul>
+        <li>It would save a little more time to be able to just be able to open a GUI to run FFMPEG for this specific purpose
+            since I do not use any of FFMPEG's other features.
+        </li>
+        <li>With a GUI, I could skip the steps where I open commandline and open the text file. Maybe two or three less instances of copy + paste-ing, which could save a minute or two.</li>
+
+    </ul>
+<h1>Program outline:</h1>
+<ul>
+    <li>use Python Tkinter</li>
+    <li>4 text input boxes:
+        <ol>
+            <li>original video's file name </li>
+            <li>start time of cut</li>
+            <li>end time of cut</li>
+            <li>ouput video clip's new file name</li>
+        </ol> 
+    </li>
+    <li>button that runs program</li>
+    <li>Store the text input into the input boxes as 4 string variables</li>
+    <li>Have the FFMPEG command template written with fstrings that will accept each of the 4 variables</li>
+    <li>Program runs FFMPEG from commandline and inputs the completed template command into FFMPEG to have it cut the video</li>
+</ul>
+    <p>Github repo link for project: placeholder</p>
+
+        </p>    
+        <a href="/"><p>Click here to return to the main page.</p></a>
+    
+        <div></div>
+    
+    </div>
+  </body>
+</html>
